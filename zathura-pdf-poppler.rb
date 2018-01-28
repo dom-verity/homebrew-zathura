@@ -4,9 +4,9 @@
 
 class ZathuraPdfPoppler < Formula
   homepage "https://pwmt.org/projects/zathura-pdf-poppler/"
-  url "https://pwmt.org/projects/zathura-pdf-poppler/download/zathura-pdf-poppler-0.2.7.tar.gz"
-  version "0.2.7"
-  sha256 "985e4e4dce6143fdfd246e78b0ccbef0d32b8809c6a4f08bb53a2f7dfbd383c0"
+  url "https://pwmt.org/projects/zathura-pdf-poppler/download/zathura-pdf-poppler-0.2.8.tar.gz"
+  version "0.2.8"
+  sha256 "421d57a398d97c8264baced8743799fdec5f2cf989b34a8f42cf2277f4a9a5d4"
 
   depends_on :x11 # if your formula requires any X11/XQuartz components
   depends_on 'zathura'
@@ -36,7 +36,7 @@ class ZathuraPdfPoppler < Formula
   end
 
   def caveats
-    <<-EOS.undent
+    <<~EOS
       To enable this plugin you will need to link it in place.
       First create the plugin directory if it does not exist yet:
         $ mkdir -p $(brew --prefix zathura)/lib/zathura
